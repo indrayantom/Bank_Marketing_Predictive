@@ -51,10 +51,16 @@ from sklearn.metrics import roc_curve
 ```
 
 ## Result Preview
-By Hyperparameter Tuning and Decision threshold adjusting, it is found that Logistic Regression gives the best result compared to KNN and Random Forest in terms of AUC and F1 score.
-![Fi](https://user-images.githubusercontent.com/92590596/156796504-440be765-e057-48a9-b559-ca07f7849550.jpg)
+By Cross Validation and Hyperparameter tuning, it is found that Light Gradient Boosting Machine gives the best result compared to other models with AUC 80% , F1 44% and training time 0.25s
+![shapp_project](https://user-images.githubusercontent.com/92590596/156873400-f4e34d86-77e9-4461-b92d-70f811222be3.png)
 
-After being tuned with GridSearchCV method and adjusted to 0.3 decision/probability threshold, the improvement becomes significant compared to the default model as the Recall and F1 score are increased to 76\% (**+23\%**) and 63\% (**+5\%**) respectively . With an AUC score of 83\% (**+0\%**), those metrics are successfully increased without a lot of reduction in accuracy, only **3\%** lower from the default model with the score of 77\%.
+From SHAP value plot above, one can see that the results is quite consistent to the previous results we obtain in EDA process. The variables are sorted descendingly based on their contribution, which color indicates the value level of the feature (red means high, blue means low -> 100 in age will be labelled by red, meanwhile 18 is labelled by blue) and SHAP value measures the impact of that value level to the outcomes, for example, if the age is positively correlated to the subscription probability, red will be on the chart's positive side and blue in the negative side.
 
-Futhermore, the feature importance (coefficient) of the Logistic regression model can be seen on above figure. Notice that the coefficients are both positive and negative. It can be elaborated as the predictor of Class 1 (Churn Yes) has positive coefficient whereas the predictor of Class 0 (Churn No) has negative coefficient. Overall, it is evident that the graph  is already in accordance to the result of EDA project carried out before on similar dataset . Contract, tenure, InternetService, PaymentMethod and some additional internet services such as TechSupport and Streaming are considered as the key features on which the business strategists should focus to improve the level of satisfaction and retent the customer. Read the EDA [here](https://github.com/indrayantom/telco_custmer_dea).
+- From the plot, 3 features with the most contribution are sos-con variables nr.employed, emp.var.rate and euribor3m. The plot depicts that when nr.employed are pretty low, the subscription probability increases and otherwise. The insights of euribor3m and emp.var.rate are less clear, even though we can understand higher emp.var.rate means lower probability and lower euribor3m means higher probability in overall.
+
+- Younger and older clients tend to have higher probability to subscribe which result is similar to the previous EDA analysis. As well as poutcome and campaign.
+
+- Lower value of consumer price index and confidence index results in higher probability to subscribe. 
+
+- May (month) and Monday (day) give smaller subscription probability.
 
