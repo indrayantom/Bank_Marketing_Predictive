@@ -5,7 +5,7 @@ The data is related to direct marketing campaigns (phone calls) of a Portuguese 
 ![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
 
 
-Just in case you are not aware, the .ipynb file contains both the codes and the explanation, which you can also see easily here. Since this work was my final project in a Data Science Bootcamp, I also provide a Google Slide Presentation to summarize all the procedures and findings, see it [here](https://docs.google.com/presentation/d/1XxfgQliJreu22A_ZNEC0bhTklE0TXCUiNk4umcbErE0/edit?usp=sharing).
+Just in case you are not aware, the .ipynb file contains both the codes and the explanation, which you can also see easily [here](https://indrayantom.github.io/Bank_Marketing_Predictive/). Since this work was my final project in a Data Science Bootcamp, I also provide a Google Slide Presentation to summarize all the procedures and findings, see it [here](https://docs.google.com/presentation/d/1XxfgQliJreu22A_ZNEC0bhTklE0TXCUiNk4umcbErE0/edit?usp=sharing).
 
 ## Objectives 
 Nowadays, banks can make money with a lot of different ways, even though at the core they are still considered as lenders. Generally, they make money by borrowing it from the depositors, who are compensated later with a certain interest rate and security for their funds. Then, the borrowed money will be lent out to borrowers who need it at the moment. The borrowers however, are charged with higher interest rate than what is paid to the depositors. The difference between interest rate paid and interest rate received is often called as interest rate spead, where the banks gain profit from.
